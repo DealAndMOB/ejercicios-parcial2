@@ -1,0 +1,7 @@
+<script>
+    var frase = prompt("ingrese una frase");
+    function contar(frase){
+        return frase.replace(/[bcdfghjklmnpqrstvwxyzBDFGHJKLMNPQRSTVWXYZ" "]/g, '').length;
+    }
+    alert(contar(frase));
+</script>

@@ -1,0 +1,14 @@
+<script>
+     var frase = prompt("ingrese una frase");
+     contar(frase);
+    function contar(frase){
+        var vocales = frase.replace(/[bcdfghjklmnpqrstvwxyzBDFGHJKLMNPQRSTVWXYZ" "]/g, '').length;
+        var consonantes = frase.replace(/[aeiouAEIOU" "]/g, '').length;         
+        var alReves = frase.split("").reverse().join("");
+       
+        alert("hay " +vocales+ " vocales");
+        alert("hay " +consonantes+ " consonantes");
+        alert("palabra al reves " + alReves);
+    }
+    
+</script>

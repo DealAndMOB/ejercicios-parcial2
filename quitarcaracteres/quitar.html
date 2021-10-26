@@ -1,0 +1,25 @@
+<script>
+var frase = prompt("Ingresar frase");
+var palabraFinal = quitarCaracteres(frase);
+alert(palabraFinal);
+function quitarCaracteres(frase){
+    let caracteres = ["1","2","3","4","5","6","7","8","9","0","á","é","í","ó","ú","Á","É","Í","Ó","Ú"," ","!","@","#","$","%","&","/","(",")","=","?","¿","¡",".",",",";",":","-","_","+","*","{","}","[","]","|","\\","<",">","^","~","`","'","\""," "];    
+    let nuevaPalabra = "";
+    for (let i = 0; i < frase.length; i++){
+        let verificacion = 1;
+        for (let j = 0; j < caracteres.length; j++){
+            if (frase[i] == caracteres[j]){
+                verificacion = 0;
+            }
+        }
+        if(verificacion == 1){
+            nuevaPalabra += frase[i];
+        }else{
+            nuevaPalabra += "";
+        }
+    }
+
+    return nuevaPalabra;
+
+}
+</script>
