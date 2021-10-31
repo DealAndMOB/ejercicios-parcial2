@@ -1,0 +1,11 @@
+<script>
+    //realizar un programa donde ingreses una cantidad de 
+    //usuarios y salga uno aleatorio
+    var usuarios = [];
+    var cantidad = parseInt(prompt("Ingrese la cantidad de usuarios"));
+    for (var i = 0; i < cantidad; i++) {
+        usuarios.push(prompt("Ingrese el nombre del usuario"));
+    }
+    var numero = Math.floor(Math.random() * cantidad);
+    alert("El usuario ganador es: " + usuarios[numero]); 
+</script>

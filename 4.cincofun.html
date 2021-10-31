@@ -1,0 +1,30 @@
+<script>
+//realizar un programa con 5 funciones 
+Saludar();
+function Saludar(){
+    alert("Hola");
+Despedirse();
+}
+function Despedirse(){
+    alert("Adios");
+    SaludarUsuario();
+}
+function SaludarUsuario(){
+   nombre = prompt("Ingrese su nombre");
+   alert("Hola " + nombre);
+   despedirseUsuario();
+}
+function despedirseUsuario(){
+    nombre = prompt("Ingrese su nombre");
+    alert("Adios " + nombre);
+    sumarNumeros();
+}
+function sumarNumeros(){
+    numero1 = parseInt(prompt("Ingrese el primer numero"));
+    numero2 = parseInt(prompt("Ingrese el segundo numero"));
+    alert(numero1 + numero2);   
+}
+
+
+
+</script>

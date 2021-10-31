@@ -1,0 +1,12 @@
+<script>
+    //realizar un prgrama que quite caracteres especiales
+    // de una frase ingresada por el usuario
+    // y la muestre en pantalla
+    var frase = prompt("Ingrese una frase");
+   for(var i=0; i < caracteres.length; i++){
+    var caracteres = ["/","*","+","-","=",",","'","_","&","^","%","$","#","@","!","?",".",":",";","(",")","{","}","[","]","|","<",">"," "];
+       frase = frase.replace(caracteres[i],"");
+   }
+    alert(frase);
+
+</script>
